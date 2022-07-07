@@ -1,4 +1,4 @@
-import { gql } from require('@apollo/client');
+import { gql } from '@apollo/client';
 
 export const GET_ME = gql`
 me{

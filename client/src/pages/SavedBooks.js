@@ -1,8 +1,8 @@
 import { useMutation, useQuery } from '@apollo/client';
 import React, { useState, useEffect } from 'react';
 import { Jumbotron, Container, CardColumns, Card, Button } from 'react-bootstrap';
+import { GET_ME } from '../utils/queries';
 
-import { getMe, deleteBook } from '../utils/API';
 import Auth from '../utils/auth';
 import { removeBookId } from '../utils/localStorage';
 import { REMOVE_BOOK } from '../utils/mutations';
@@ -22,21 +22,14 @@ const SavedBooks = () => {
       return false;
     }
 
-    try {
-      //remove book with mutation
-      await removeBook({
-        variables: { bookId: bookId }
-      });
-      // save ID to local storage
-      removeBookId(bookId);
-
-      const updatedUser = await response.json();
-      setUserData(updatedUser);
-      // upon success, remove book's id from localStorage
-      removeBookId(bookId);
-    } catch (err) {
-      console.error(err);
-    }
+  try{
+    await removeBook({
+      variables: { bookId: bookId }
+    });
+    removeBookId(bookId)
+  }catch(err){
+    console.log(err);
+  }
   };
 
   // if data isn't here yet, say so

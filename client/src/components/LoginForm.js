@@ -29,13 +29,13 @@ const LoginForm = () => {
     }
 
 try{
-  await login({
+  const { data} = await login({
     variables: {...userFormData}
   });
   Auth.login(data.login.token);
-}catch(err){
-  console.log(err)
-  setShowAlert: true
+}catch(error){
+  console.log(error);
+  setShowAlert(true);
 }
 
     setUserFormData({
