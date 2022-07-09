@@ -1,5 +1,5 @@
 import { useMutation, useQuery } from '@apollo/client';
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Jumbotron, Container, CardColumns, Card, Button } from 'react-bootstrap';
 import { GET_ME } from '../utils/queries';
 
@@ -9,7 +9,12 @@ import { REMOVE_BOOK } from '../utils/mutations';
 
 const SavedBooks = () => {
   const { loading, data } = useQuery(GET_ME);
+
   const userData = data?.me || {};
+  
+  // const { loading, data: UserData } = useQuery(GET_ME)
+  console.log(userData);
+
 
   const [removeBook] = useMutation(REMOVE_BOOK);
 
