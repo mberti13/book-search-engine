@@ -1,7 +1,7 @@
 
 # Book Search Engine
 ## Description
-This is a Book Search Engine, built using: React, GraphQL, MongoDB, Express, Apollo, and Concourrently for development purposes
+This project is a FullStack MERN application that allows a user to create an account, search for their favorite books, and save them to their profile.
 
 ## Table of Contents
 1. [Installation](#Installation)
@@ -12,15 +12,13 @@ This is a Book Search Engine, built using: React, GraphQL, MongoDB, Express, Apo
 6. [Questions?](#Questions)
     
 ## Installation
-To install, clone this repo.
+To install, clone or pull from this Github repository.
 ## Usage
-Run `npm i` in the root, server, and client directories in order to install all dependencies needed to run.
-
-It can also be found [here](/) for actual online use.
+To use, install and run npm i in the project's root diretory. Then run npm run develop to run both servers at the same time.
 ## Licensing
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Contributions
-To contribute, open an issue or pull request on this repo.
+To contribute, add an issue or a pull request to this repository.
 ## Tests
 N/A
 ## Questions
