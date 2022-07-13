@@ -15,6 +15,9 @@ This project is a FullStack MERN application that allows a user to create an acc
 To install, clone or pull from this Github repository.
 ## Usage
 To use, install and run npm i in the project's root diretory. Then run npm run develop to run both servers at the same time.
+## Screenshot
+![image](./client/assets/Screenshot%202022-07-13%20181627.jpg)
+
 ## Licensing
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Contributions
